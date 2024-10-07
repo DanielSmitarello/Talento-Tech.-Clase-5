@@ -1,0 +1,133 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+
+
+h1 {
+    padding: 10px 20px;
+}
+
+body {
+    /* background-color: #add8e6; */
+    display:block;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.parrafo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    /* background-color: aliceblue; */
+}
+
+.parrafo p {
+    background-color: antiquewhite;
+    width: 70%;
+    padding: 20px;
+}
+.iframe {
+    /* background-color: #add8e6; */
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    height: 50px; /* Ajusta el tamaño del logo aquí */
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.p-about {
+    width: 60%;
+    padding: 0 20px;
+    background-color: rgba(234, 235, 231, 0.753);
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+.submit {
+    padding: 12px;
+    background-color: #00D1B2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #00a98d;
+}
+
+@media (max-width: 600px) {
+    .contact-form-container {
+        padding: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+#navbar #navbar-end{
+    background-color: #1f2525;
+    display: flex;
+    justify-content: end;
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    /* background-color: #e4dea6; */
+}
+
+.form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: #8f9595; */
+    width: 60%;
+    padding: 30px;
+}
+
+label {
+    /* background-color: #00D1B2; */
+    width: 100%;
+    display: flex;
+    padding-bottom: 5px;
+    /* flex-direction:row; */
+    /* justify-content:end; */
+    /* align-items:end; */
+}
+
+input, textarea {
+    margin: 5px;
+}
