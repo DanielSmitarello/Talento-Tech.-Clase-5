@@ -183,15 +183,31 @@ and (-webkit-min-device-pixel-ratio: 3) {
 @media only screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) {
     /* Estilos específicos para iPhone 15 Pro Max */
     body {
-        background-color: lightgray;
+        background-color:#f0f0f0;
     }
 
     .form-container {
-        padding: 20px;
+        /* background-color: #00D1B2; */
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact-form-container {
+        font-size: 30px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        /* background-color: #1f2525; */
+        font-size: 20px;
+        width: 90%;
     }
 
     .navbar-brand img {
-        width: 200px;
+        width: 40px;
     }
 }
 
