@@ -101,7 +101,7 @@ button:hover {
     width: 60%;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .contact-form-container {
         padding: 20px;
     }
@@ -110,7 +110,7 @@ button:hover {
         font-size: 14px;
         padding: 10px;
     }
-}
+} */
 
 #navbar #navbar-end{
     background-color: #1f2525;
@@ -161,74 +161,29 @@ input, textarea {
     margin: 5px;
 }
 
-/* Media query para iPhone 15 Pro Max */
-@media only screen 
-and (min-device-width: 430px) 
-and (max-device-width: 932px) 
-and (-webkit-min-device-pixel-ratio: 3) {
-    
-    /* Estilos específicos para el iPhone 13 Pro Max */
+@media (max-width: 438px) {
+    /* Estilos para pantallas con un ancho máximo de 768px */
     body {
-        background-color: #f0f0f0;
-    }
-
-    .navbar {
-        font-size: 16px;
-    }
-    
-    /* Otros estilos personalizados */
-}
-
-/* Media query para iPhone 15 Pro Max en modo vertical */
-@media only screen and (device-width: 431px) and (device-height: 933px) and (-webkit-device-pixel-ratio: 3) {
-    /* Estilos específicos para iPhone 15 Pro Max */
-    body {
-        background-color:#f0f0f0;
+      background-color: rgba(128, 128, 128, 0.201);
     }
 
     /* contact.html */
 
-    .form-container {
-        /* background-color: #00D1B2; */
-        width: 100%;
-        padding: 10px;
-    }
-
     .contact-form-container {
-        font-size: 30px;
-        width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 25px;
+        background-color:#babbbb7f;
+        width: 100%;
     }
 
     .form {
-        /* background-color: #1f2525; */
-        font-size: 20px;
-        width: 90%;
-    }
-
-    /* navbar */
-    .navbar-brand img {
-        width: 40px;
+        width: 80%;
+        background-color: darkgray;
+        font-size: 15px;
     }
 
 
-}
-
-/* Media query para iPhone 15 Pro Max en modo horizontal */
-@media only screen and (device-width: 932px) and (device-height: 430px) and (-webkit-device-pixel-ratio: 3) {
-    /* Estilos específicos para iPhone 15 Pro Max en horizontal */
-    body {
-        background-color: lightblue;
-    }
-
-    .form-container {
-        padding: 30px;
-    }
-
-    .navbar-brand img {
-        width: 150px;
-    }
-}
-
+  }
+  
