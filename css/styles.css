@@ -161,7 +161,7 @@ input, textarea {
     margin: 5px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 430px) {
     /* Estilos para pantallas con un ancho máximo de 768px */
     body {
       background-color: rgba(128, 128, 128, 0.201);
