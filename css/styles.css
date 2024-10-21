@@ -186,6 +186,13 @@ input, textarea {
         font-size: 15px;
     }
 
+    /* MULTIMEDIA.HTML */
+
+    .video  {
+        /* background-color: #00D1B2; */
+        width: 80%;
+    }
+
 
   }
   
