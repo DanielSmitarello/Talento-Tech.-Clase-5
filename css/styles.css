@@ -178,3 +178,36 @@ and (-webkit-min-device-pixel-ratio: 3) {
     
     /* Otros estilos personalizados */
 }
+
+/* Media query para iPhone 15 Pro Max en modo vertical */
+@media only screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) {
+    /* Estilos específicos para iPhone 15 Pro Max */
+    body {
+        background-color: lightgray;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .navbar-brand img {
+        width: 200px;
+    }
+}
+
+/* Media query para iPhone 15 Pro Max en modo horizontal */
+@media only screen and (device-width: 932px) and (device-height: 430px) and (-webkit-device-pixel-ratio: 3) {
+    /* Estilos específicos para iPhone 15 Pro Max en horizontal */
+    body {
+        background-color: lightblue;
+    }
+
+    .form-container {
+        padding: 30px;
+    }
+
+    .navbar-brand img {
+        width: 150px;
+    }
+}
+
