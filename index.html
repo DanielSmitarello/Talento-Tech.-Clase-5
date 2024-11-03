@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 
     <title>Inicio</title>
 </head>
 
 <body>
-    <header>
+    <!-- Inicio del NavBar -->
 
-    </header>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            
 
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
                 data-target="navbarBasicExample">
@@ -31,6 +31,10 @@
             <div class="navbar-start">
                 <a class="navbar-item" href="index.html">
                     Inicio
+                </a>
+
+                <a class="navbar-item" href="../templates/modelos.html">
+                    Modelos
                 </a>
 
                 <a class="navbar-item" href="templates/multimedia.html">
@@ -57,7 +61,7 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-primary">
+                        <a class="button is-light">
                             <strong>Registrate</strong>
                         </a>
                         <a class="button is-light">
@@ -67,17 +71,140 @@
                 </div>
             </div>
         </div>
-    </nav>   
-    <main>
+    </nav>
 
+    <!-- Inicio del NavBar -->
+
+    <header class="header">
+        <div class="header-titulo">
+            
+                <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
+            
+            
+                <h1>Bienvenidos a PampaMaquina</h1>
+            
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Inicio del Carousel -->
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="/img/autoahorro-bn-au.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="/img/Home-NuevaAmarok24.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="/img/Home-tcross24.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="/img/Taos-j.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Fin del Carousel -->
+
+        
+        <div class="parrafo">
+            <h2>En PampaMaquina hay un modelos ideal para vos</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, velit. Numquam quae iste eos quo? Fugiat iure
+                vitae ratione commodi provident dolore quibusdam iste nesciunt recusandae reiciendis eligendi cupiditate, ipsam
+                explicabo sed atque itaque, enim incidunt minima. Laudantium, impedit quibusdam.</p>
+            <video autoplay muted loop playsinline>
+                <source src="https://assets.volkswagen.com/is/content/volkswagenag/Web_VW_TCross-0x720-3000k" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+        <div>
+            <h3>Posventa</h3>
+            <h2>Tu modelo merece el mejor de los cuidados</h2>
+            <p>Nos aseguramos de que tu vehículo esté siempre en condiciones con nuestros servicios de Postventa en PampaMáquina, para que puedas seguir tu camino con la tranquilidad que buscás.</p>
+        </div>
+        <div class="grid">
+            <h3>Seguimos avanzando juntos</h3>
+            <div class="container">
+                <div class="item">
+                    <img src="img/Bplanes.jpg" alt="">
+                    <h5>Autoahorro PampaMaquina</h5>
+                    <p>Siempre es tiempo de tener un buen Plan. Encontrá el plan indicado para vos y subite a tu nuevo modelo.</p>
+                </div>
+                <div class="item">
+                    <img src="img/Bpvta.jpg" alt="" srcset="">
+                    <h5>Servicios Postventa</h5>
+                    <p>Existe el mejor cuidado para tus modelos. Nos aseguramos de que tu modelo esté siempre en condiciones con nuestros servicios de Postventa PampaMaquina, para que puedas seguir tu camino de la mejor manera.</p>
+                </div>
+                <div class="item">
+                    <img src="img/Botro.jpg" alt="">
+                    <h5>Ventas Corporativas</h5>
+                    <p>A la medida de tus necesidades. Encontrá el mejor asesoramiento y propuestas diferenciales para tu empresa.</p>
+                </div>
+                <div class="item">
+                    <img src="img/Bventas.jpg" alt="">
+                    <h5>Conózcanos</h5>
+                    <p>Somos el concesionario de las principales modelos del pais en la provincia de La Pampa.</p>
+                </div>
+            </div>
+        </div>
     </main>
-    <h1>Inicio de mi pagina</h1>
-    <div class="parrafo">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, velit. Numquam quae iste eos quo? Fugiat iure
-        vitae ratione commodi provident dolore quibusdam iste nesciunt recusandae reiciendis eligendi cupiditate, ipsam
-        explicabo sed atque itaque, enim incidunt minima. Laudantium, impedit quibusdam.</p>
-    </div>
+
+    <footer>
+        <div>
+            <div>
+                <h4>Pampawagen</h4>
+                <a href="#">Nuestra Empresa</a>
+            </div>
+            <div>
+                <h4>Contactanos</h4>
+                <a href="#">Solicitud de asesoramiento</a>
+                <a href="#">Solicitud de Test Drive</a>
+                <a href="#">Nuestras Sucursales</a>
+            </div>
+            <div>
+                <h4>Modelos</h4>
+                <a href="#">Nuevos</a>
+                <a href="#">Usados</a>
+            </div>
+            <div class="redes-sociales">
+                <h4>Nuestras Redes sociales</h4>
+                <div class="icons">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-3x"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-3x"></i></a>
+                    <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok fa-3x"></i></a>
+                </div>
+                
+            </div>
+            <div class="fixed-bottom">
+                <div>
+                    <i class="fa-brands fa-whatsapp"><span>  Contactanos</span> </i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-car"> <span>  Modelos</span></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-map-pin"> <span>  Donde estamos</span></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/6bf82f9666.js" crossorigin="anonymous"></script>
+
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

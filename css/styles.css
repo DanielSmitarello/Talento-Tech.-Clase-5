@@ -1,264 +1,271 @@
-@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+/*______________________ * ______________________*/
 
+/* Establecer un margen y padding de cero para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Asegura que el ancho y alto incluyan el padding y el borde */
 
-h1 {
-    padding: 10px 20px;
+}
+
+/* Seteo general */
+
+html {
+    font-size: 100%;
+    /* 16px en la mayoría de los navegadores */
 }
 
 body {
-    /* background-color: #add8e6; */
-    display:block;
-    justify-content: center;
-    width: 100%;
-    padding: 10px;
-    /* height: auto; */
+    font-size: 1rem;
+    /* 1rem será igual a 16px */
 }
+
+/*______________________ Navbar ______________________*/
+
+/* Eliminar subrayado en el navbar (si lo hubiera) */
+.navbar a {
+    text-decoration: none;
+    /* Elimina el subrayado */
+}
+
+
+/*______________________ Header ______________________*/
+
+.header {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente los elementos */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    padding: 5.5vw 0vw;
+    /* background-color: #f4f4f4; */
+}
+
+/* Estilo para el contenedor del título y logo */
+.header-titulo {
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; Espacio entre el logo y el título (No me gusta como los alinea) */
+
+}
+
+.header-titulo>h1 {
+    width: 80%;
+    text-align: center;
+    /* background-color: antiquewhite; */
+    font-size: 4rem;
+}
+
+.header-titulo>a{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+/* Estilo para el logo */
+.header-titulo>a>.logo {
+    /* background-color: black; */
+    width: 100%;
+    /* Ajusta el tamaño de la imagen si es necesario */
+}
+
+/* Estilo para el título */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    /* padding-bottom: 2rem; */
+}
+
+
+/*______________________ Main ______________________*/
 
 .parrafo {
-    width: 100%;
     display: flex;
-    justify-content: center;
-
-    /* background-color: aliceblue; */
-}
-
-.parrafo p {
-    background-color: antiquewhite;
-    width: 70%;
-    padding: 20px;
-}
-.iframe {
-    /* background-color: #add8e6; */
-    width: 100%;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-}
-
-img {
-    padding-top: 10px;
-    display: flex;
-    align-items: center;
-    height: 50px; /* Ajusta el tamaño del logo aquí */
-}
-
-.about {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.p-about {
-    width: 60%;
-    padding: 0 20px;
-    background-color: rgba(234, 235, 231, 0.753);
-    border-radius: 10px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-    width: 100%;
-}
-
-textarea {
-    height: 150px;
-    resize: none;
-}
-
-.submit {
-    padding: 12px;
-    background-color: #00D1B2;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #8d9997;
-}
-
-/* Multimedia html */
-
-.contenedor-video {
-    background-color: #1f2525a2;
-    padding: 30px 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.video {
-    background-color: rgba(171, 188, 142, 0.226);
-    width: 60%;
-}
-
-@media (max-width: 1400px) {
-    .video{
-        width: 80%;
-        display: flex;
-        justify-content: center;
-    }
-    .iframe{
-       width: 80%;
-    }
-    .youtube  {
-        /* background-color: #00D1B2; */
-        width: 90%;
-        height:400px; 
-    }
-
-
-    button {
-        font-size: 14px;
-        padding: 10px;
-    }
-}
-
-#navbar #navbar-end{
-    background-color: #1f2525;
-    display: flex;
-    justify-content: end;
-}
-
-/* contact.html */
-
-.form-container {
-    /* background-color: #00D1B2; */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.contact-form-container {
-    width: 80%;
-    padding: 15px 0px 0px 0px;
-    display: flex;
-    justify-content: center;
-    background-color: #c0c9ca7b;
-    border-radius: 10px;
-}
-
-.form {
-    display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    /* background-color: #8f9595; */
-    width: 60%;
-    padding: 30px;
 }
 
-label {
-    /* background-color: #00D1B2; */
-    width: 100%;
+.parrafo>h2{
+    text-align: center;
+    font-size: 3rem;
+    padding: 5rem;
+}
+
+.parrafo>p{
+    width: 80%;
+    padding-bottom: 4rem;
+
+}
+
+
+.grid {
     display: flex;
-    padding-bottom: 5px;
-    /* flex-direction:row; */
-    /* justify-content:end; */
-    /* align-items:end; */
+    flex-direction: column;
+    align-items: center;
 }
 
-input, textarea {
-    margin: 5px;
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    /* Opcional: Espacio entre las celdas del grid */
+    font-size: 0.9rem;
 }
 
-@media (max-width: 1200px) {
-
-     /* MULTIMEDIA.HTML */
-
-     .video{
-        width: 80%;
-        display: flex;
-        justify-content: center;
-    }
-    .iframe{
-       width: 80%;
-    }
-    .youtube  {
-        /* background-color: #00D1B2; */
-        width: 90%;
-        height:400px; 
-    }
+.item {
+    background-color: #f0f0f0d1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid #f0f0f0; */
 }
 
-@media (max-width: 750px) {
-    .contact-form-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 30px;
-    }
-
-    .form {
-        width: 80%;
-        font-size: 20px;
-    }
-
-    /* MULTIMEDIA.HTML */
-
-    .video{
-        width: 80%;
-        display: flex;
-        justify-content: center;
-    }
-    .iframe{
-       width: 80%;
-    }
-    .youtube  {
-        /* background-color: #00D1B2; */
-        width: 90%;
-        height:auto; 
-    }
-
+.fixed-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed; 
+    bottom: 10px; /* Ajusta según tu preferencia */ 
+    /* left: 10%; Ajusta según tu preferencia  */
+    /* width: 80%;
+    height: 6.5rem;   */
+    /* background-color: #f0f0f0;  */
+    /* border: 1px solid #ccc;  */
+    padding: 0.8rem; 
 }
 
-@media (max-width: 430px) {
-    /* Estilos para pantallas con un ancho máximo de 768px */
-    body {
-      background-color: rgba(195, 180, 180, 0.201);
-    }
+.fixed-bottom>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #f0f0f0;
+    border-radius: 1rem;
+    height: 2.5rem;
+    width: 24%;
+    background-color: #3333339a;
+}
 
-    /* contact.html */
+.fixed-div>div i:hover { 
+    transform: scale(1.1); /* Aumenta el tamaño del ícono al pasar el ratón sobre él */
+    transition: transform 0.2s ease 0.2s; /* Añade una transición suave con un retraso de 0.2s */
+}
 
-    .form-container{
-        height: auto;
-    }
-    .contact-form-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        font-size: 25px;
-        background-color:#babbbb7f;
+.fixed-bottom>div span {
+    display: inline; /* El texto se muestra por defecto */
+}
+
+
+.fixed-bottom>div i {
+    transition: transform 0.2s ease 0.2s; /* Añade una transición suave con un retraso de 0.2s */
+}
+
+.fixed-bottom>div i:hover {
+    transform: scale(2.1); /* Aumenta el tamaño del ícono al pasar el ratón sobre él */
+}
+
+.fixed-bottom>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #f0f0f0;
+    border-radius: 1rem;
+    height: 2.5rem;
+    width: 24%;
+    background-color: #3333339a;
+    position: relative;
+    transition: transform 0.2s ease; /* Asegúrate de que todos los elementos tengan una transición suave */
+}
+
+.fixed-bottom>div span {
+    display: inline; /* El texto se muestra por defecto */
+}
+
+
+.fixed-bottom>div i {
+    transition: transform 0.2s ease 0.2s; /* Añade una transición suave con un retraso de 0.2s */
+}
+
+.fixed-bottom>div i:hover {
+    transform: scale(1.3); /* Aumenta el tamaño del ícono al pasar el ratón sobre él */
+}
+
+
+/*______________________ Footer ______________________*/
+
+
+.fa-facebook,
+.fa-instagram,
+.fa-tiktok,
+.fa-linkedin {
+    color: #333333a7;
+    padding: 8%;
+}
+
+.redes-sociales{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icons {
+    /* background-color: #33333333; */
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+}
+
+/*______________________ MediaQuery's ______________________*/
+
+@media (min-width: 601px) and (max-width: 901px) {
+    .container{
+        /* background-color: aqua; */
         width: 100%;
-        border-radius: 0%;
-        padding-bottom: 10px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        /* Una columna en pantallas pequeñas */
+        grid-template-rows: repeat(4, 1fr);
+        /* Seis filas */
+        font-size: 0.8rem;
     }
 
-    .form {
-        width: 80%;
-        background-color: darkgray;
-        font-size: 15px;
+    .fixed-div>div{
+        width: 8rem;
+        font-size: 0.71rem;
     }
 
-    /* MULTIMEDIA.HTML */
-
-    .video  {
-        /* background-color: #00D1B2; */
-        width: 80%;
+    .fixed-bottom>div span {
+        display: none; /* Oculta el texto en pantallas pequeñas */
     }
 
-
-  }
-  
+    .fixed-bottom>div>i{
+        align-content: center;
+        font-size: 1.1rem; /* Tamaño inicial de los íconos */
+        transition: transform 0.2s ease 0.2s; /* Añade una transición suave con un retraso de 0.2s */
+    }
+    
+    .fixed-bottom>div i:hover {
+        transform: scale(1.5); /* Aumenta el tamaño del ícono al pasar el ratón sobre él */
+    }
+}
