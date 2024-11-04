@@ -54,10 +54,10 @@ body {
 }
 
 .header-titulo>h1 {
-    width: 80%;
+    width: 75%;
     text-align: center;
     /* background-color: antiquewhite; */
-    font-size: 4rem;
+    font-size: 3.6rem;
 }
 
 .header-titulo>a{
@@ -69,6 +69,7 @@ body {
 .header-titulo>a>.logo {
     /* background-color: black; */
     width: 100%;
+    filter: grayscale(100%); /* Aplica un filtro de escala de grises al 100% */
     /* Ajusta el tamaño de la imagen si es necesario */
 }
 
@@ -96,11 +97,31 @@ h1 {
 }
 
 .parrafo>p{
-    width: 80%;
+    width: 75%;
     padding-bottom: 4rem;
 
 }
 
+.posventa {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 3rem;
+}
+
+.posventa>h3{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.posventa>h4{
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+.posventa>p{
+    font-size: 1.3rem;
+}
 
 .grid {
     display: flex;
@@ -108,12 +129,53 @@ h1 {
     align-items: center;
 }
 
+.grid>h3{
+    text-align: center;
+    width: 100%;
+    /* background-color: #3333336e; */
+    font-size: 3rem;
+    padding: 2rem 0rem;
+}
+
+.item>h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.item>p{
+    width: 80%;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.item {
+    overflow: hidden; 
+    display: inline-block;
+    overflow: hidden; /* Evita que las imágenes se desborden del contenedor */
+    display: inline-block; /* Asegura que cada .item se comporte como un bloque en línea */
+}
+
+.item>img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 60%; /* Asegura que la imagen ocupe toda la altura del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    transition: transform 0.5s ease, filter 0.5s ease; /* Transiciones suaves para transformación y filtro */
+}
+
+.item>img:hover {
+    -webkit-transform: scale(1.1); /* Escala la imagen al 130% al pasar el ratón sobre ella */
+    transform: scale(1.1); /* Escala la imagen al 130% al pasar el ratón sobre ella */
+    filter: grayscale(100%); /* Aplica un efecto de escala de grises al 100% al pasar el ratón */
+}
+
 
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 15px;
+    gap: 2rem;
     /* Opcional: Espacio entre las celdas del grid */
     font-size: 0.9rem;
 }
@@ -135,19 +197,14 @@ h1 {
     align-items: center;
     position: fixed; 
     bottom: 10px; /* Ajusta según tu preferencia */ 
-    /* left: 10%; Ajusta según tu preferencia  */
-    /* width: 80%;
-    height: 6.5rem;   */
-    /* background-color: #f0f0f0;  */
-    /* border: 1px solid #ccc;  */
-    padding: 0.8rem; 
+    padding: 1.8rem; 
 }
 
 .fixed-bottom>div{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #f0f0f0;
     border-radius: 1rem;
     height: 2.5rem;
@@ -212,6 +269,47 @@ h1 {
     padding: 8%;
 }
 
+.footer-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.contacto-grid {
+    /* background-color: aqua; */
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    /* Opcional: Espacio entre las celdas del grid */
+    font-size: 0.9rem;
+    padding: 1.5rem;
+}
+
+.grid-column {
+    /* background-color: #f0f0f0; */
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-column>h4{
+    padding: 1rem;
+    text-align: center;
+}
+
+.grid-column>a{
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    transition: transform 0.2s ease 0.2s; /* Añade una transición suave con un retraso de 0.2s */
+}
+
+.grid-column>a:hover{
+    color: grey;
+    transform: scale(1.3); /* Aumenta el tamaño del ícono al pasar el ratón sobre él */
+}
+
 .redes-sociales{
     /* background-color: aqua; */
     display: flex;
@@ -250,9 +348,19 @@ h1 {
         font-size: 0.8rem;
     }
 
+   
     .fixed-div>div{
         width: 8rem;
         font-size: 0.71rem;
+    }
+
+    .fixed-bottom>div{
+        padding: 1rem 1rem;
+    }
+
+    .fixed-bottom{
+        display: flex;
+        justify-content:space-evenly;
     }
 
     .fixed-bottom>div span {
@@ -260,8 +368,16 @@ h1 {
     }
 
     .fixed-bottom>div>i{
-        align-content: center;
+        /* align-content: center; */
         font-size: 1.1rem; /* Tamaño inicial de los íconos */
+    }
+
+    .fixed-bottom>div{
+        /* background-color: aqua; */
+        width: 7%;
+        height: 2.5rem;
+        border-radius: 3rem;
+        
     }
     
 }
