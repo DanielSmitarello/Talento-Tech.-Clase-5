@@ -97,7 +97,8 @@ h1 {
 }
 
 .parrafo>p{
-    width: 75%;
+    width: 80%;
+    text-align: justify;
     padding-bottom: 2rem;
 
 }
@@ -106,7 +107,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 3rem;
+    padding: 2rem 1rem;
 }
 
 .posventa>h3{
@@ -120,7 +121,10 @@ h1 {
 }
 
 .posventa>p{
+    align-self: center;
+    width: 80%;
     font-size: 1.3rem;
+    text-align: justify;
 }
 
 .grid {
