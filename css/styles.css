@@ -92,7 +92,7 @@ h1 {
 
 .parrafo>h2{
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.3rem;
     padding: 5rem;
 }
 
@@ -375,9 +375,49 @@ h1 {
     .fixed-bottom>div{
         /* background-color: aqua; */
         width: 7%;
-        height: 2.5rem;
+        height: 2.1rem;
         border-radius: 3rem;
         
     }
+
+    .contacto-grid {
+        /* background-color: aqua; */
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        /* Opcional: Espacio entre las celdas del grid */
+        font-size: 0.9rem;
+        padding: 1.5rem;
+    }
+
+    .header-titulo {
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-titulo>h1{
+        /* background-color: aqua; */
+        width:70%;
+        font-size: 3rem;
+    }
+
+    .grid-column>a{
+        text-decoration: none;
+        color: black;
+        padding: 0.5rem;
+    }
+
+    .redes-sociales>h4{
+        /* background-color: aqua; */
+        text-align: center;
+        width: 100%;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    
     
 }
