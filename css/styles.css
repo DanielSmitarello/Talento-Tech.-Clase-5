@@ -335,6 +335,74 @@ h1 {
 }
                             
 
+                /* ---- contact.html ---- */
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; /* Añade padding alrededor del contenedor */
+}
+
+.contact-form-container {
+    background-color: #ffffff; /* Fondo blanco para el contenedor del formulario */
+    padding: 2rem; /* Añade padding dentro del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil */
+    max-width: 500px; /* Ancho máximo del formulario */
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho disponible */
+}
+
+.contact-form-container h2 {
+    text-align: center; /* Centra el texto del título */
+    margin-bottom: 1rem; /* Espacio debajo del título */
+    color: #333; /* Color del texto */
+}
+
+.contact-form-container label {
+    display: block; /* Hace que los labels sean bloques */
+    margin-bottom: 0.5rem; /* Espacio debajo de los labels */
+    color: #555; /* Color del texto */
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%; /* Asegura que los inputs y el textarea ocupen todo el ancho disponible */
+    padding: 0.5rem; /* Padding dentro de los inputs y el textarea */
+    margin-bottom: 1rem; /* Espacio debajo de los inputs y el textarea */
+    border: 1px solid #ccc; /* Borde de 1px de color gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.contact-form-container textarea {
+    resize: vertical; /* Permite redimensionar el textarea solo verticalmente */
+    height: 100px; /* Altura inicial del textarea */
+}
+
+.contact-form-container .submit {
+    display: inline-block;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 0.75rem 1.5rem; /* Padding dentro del botón */
+    border: none; /* Sin bordes */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.contact-form-container .submit:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón sobre el botón */
+}
+
 /*______________________ Footer ______________________*/
 
 
