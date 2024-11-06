@@ -9,13 +9,6 @@
     <title>Modelos</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header-titulo">
-            <a href="../index.html"><img src="../img/logo.png" alt="Logo"></a>
-            <h1>Bienvenidos a PampaMaquina</h1>
-        </div>
-       
-    </header>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             
@@ -62,7 +55,7 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-primary">
+                        <a class="button is-light">
                             <strong>Registrate</strong>
                         </a>
                         <a class="button is-light">
@@ -72,31 +65,31 @@
                 </div>
             </div>
         </div>
-    </nav>  
-    <br>
+    </nav> 
+    <header class="header">
+        <div class="header-titulo">
+            <a href="../index.html"><img src="../img/logo.png" alt="Logo" class="logo"></a>
+            <h1>Bienvenidos a PampaMaquina</h1>
+        </div>
+       
+    </header>
+     
     <main>
         <div class="tipo-modelos">
-            <div class="card text-center">
-                <div class="card-header">
-                  <ul class="nav nav-tabs card-header-tabs">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="true" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                  </ul>
+            <div class="card-body">
+                <h5 class="card-title">Tipos de modelos a tu disposición</h5>
+                <p class="card-text">Acá navegaras por una gama amplia de modelos entre nuevos y usados</p>
+                <div class="button-car">
+                    <div class="carros">
+                        <img src="../img/nuevo.jpg" alt="">
+                        <a href="../templates/modelos/new.html" class="button is-primary">Nuevos</a>
+                    </div>
+                    <div class="carros">
+                        <img src="../img/usado.jpg" alt="">
+                        <a href="../templates/modelos/used.html" class="button is-secondary">Usados</a>
+                    </div>
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title">Tipos de modelos a tu disposición</h5>
-                  <p class="card-text">Acá navegaras por una gama amplia de modelos entre nuevos y usados</p>
-                  <a href="../templates/modelos/new.html" class="button is-primary">Nuevos</a>
-                  <a href="../templates/modelos/used.html" class="button is-secondary">Usados</a>
-                </div>
-              </div>
+            </div>
         </div>
     </main>
 </body>

@@ -38,7 +38,7 @@ body {
     /* Centra horizontalmente los elementos */
     align-items: center;
     /* Centra verticalmente los elementos */
-    padding: 5.5vw 0vw;
+    padding: 1vw 0vw;
     /* background-color: #f4f4f4; */
 }
 
@@ -185,13 +185,14 @@ h1 {
 }
 
 .item {
-    background-color: #f0f0f0d1;
+    /* background-color: #f0f0f0d1; */
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     /* border: 1px solid #f0f0f0; */
+    /* box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.518); Añade una sombra sutil */
 }
 
 .fixed-bottom {
@@ -214,6 +215,7 @@ h1 {
     height: 2.5rem;
     width: 24%;
     background-color: #3333339a;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.518); /* Añade una sombra sutil */
 }
 
 .fixed-div>div i:hover { 
@@ -261,6 +263,77 @@ h1 {
     transform: scale(1.3); /* Aumenta el tamaño del ícono al pasar el ratón sobre él */
 }
 
+                            /* ---- modelos.html ---- */
+
+.tipo-modelos>.card-body {
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 1rem; /* Añade padding al card-body */
+}
+
+.button-car {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; /* Distribuye los elementos equitativamente */
+    align-items: center; 
+    width: 80%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    padding: 0.5rem 0; /* Añade padding arriba y abajo */
+    padding-bottom: 3rem;
+    gap: 1rem; /* Añade un espacio entre los elementos */
+}
+
+.carros{
+    /* background-color: #f0f0f0;  */
+    width: 49%; /* Ajusta el ancho para que dos elementos quepan en una fila con espacio entre ellos */
+    padding: 1rem; /* Añade padding dentro de cada card */
+    height: auto;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    border-radius: 6px; /* Añade bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.295); /* Añade una sombra sutil */
+    overflow: hidden; /* Evita que la imagen se desborde del contenedor */ 
+    position: relative; /* Para asegurarnos de que la imagen se amplíe correctamente */
+}
+
+.carros>img {
+    width: 90%; /* Asegura que la imagen ocupe todo el ancho del card */
+    height: 19rem; /* Mantiene la proporción de la imagen */
+    border-radius: 4px; /* Añade bordes redondeados a la imagen */
+    padding: 0.4rem 0rem;
+    transition: transform 0.5s ease; /* Añade una transición suave */
+}
+
+.carros>img:hover {
+    transform: scale(1.2); /* Escala la imagen al pasar el ratón sobre ella */ 
+}
+
+.carros>a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6c757d; /* Color de fondo del enlace */
+    padding: 0.5rem 1rem; /* Añade padding dentro del enlace */
+    border-radius: 4px; /* Añade bordes redondeados al enlace */
+    transition: background-color 0.9s ease; /* Añade una transición suave al color de fondo */
+}
+
+.carros>a.is-secondary {
+    background-color: #6c757d; /* Color de fondo secundario */
+}
+
+.carros>a:hover {
+    background-color: #3272a22a; /* Color de fondo al hacer hover */
+}
+
+.carros>a:hover {
+    background-color: #5a62682a; /* Color de fondo secundario al hacer hover */
+}
+                            
 
 /*______________________ Footer ______________________*/
 
@@ -328,8 +401,8 @@ h1 {
     display: flex;
     align-items:center;
     justify-content:space-around;
-    padding-bottom: 10rem;
-    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
 }
 
 /*______________________ MediaQuery's ______________________*/
@@ -424,5 +497,15 @@ h1 {
         padding: 1rem;
     }
     
+    .tipo-modelos>.card-body {
+        width: 100%; /* Ajusta el ancho para pantallas pequeñas */
+    }
     
+    .button-car {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+
+    .carros{
+        width: 100%; /* Cada card ocupa todo el ancho disponible en pantallas pequeñas */
+    }
 }
