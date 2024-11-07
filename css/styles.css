@@ -403,6 +403,55 @@ h1 {
     background-color: #0056b3; /* Color de fondo al pasar el ratón sobre el botón */
 }
 
+
+                        /* ---- multimedia.html ---- */
+
+.contenedor-video {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.video-grid{
+    width: auto;
+    /* background-color: #007bff29; */
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem; /* Opcional: Espacio entre las celdas del grid */
+    font-size: 0.9rem;
+}
+
+.youtube{
+    transition: filter 0.7s ease; /* Transición suave para el filtro */
+    transition: transform 0.7s ease; /* Transición suave para la transformación */
+}
+
+.youtube:hover {
+    transform: scale(1.2); /* Aumenta el tamaño del iframe al pasar el ratón */
+    filter: grayscale(100%); /* Aplica un filtro de escala de grises al pasar el ratón */
+}
+
+/* ---- about.html */
+
+.about-titulo{
+    font-size: 3rem;
+}
+
+.about{
+    /* background-color: #0056b3; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.p-about{
+    width: 80%;
+    font-size: 1rem;
+    padding: 2rem 0rem;
+}
+
 /*______________________ Footer ______________________*/
 
 
@@ -433,7 +482,7 @@ h1 {
 }
 
 .grid-column {
-    /* background-color: #f0f0f0; */
+    background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
 }
@@ -575,5 +624,22 @@ h1 {
 
     .carros{
         width: 100%; /* Cada card ocupa todo el ancho disponible en pantallas pequeñas */
+    }
+
+    .contenedor-video {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .video-grid{
+        width: auto;
+        /* background-color: #007bff29; */
+        display: grid;
+        
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        gap: 2rem; /* Opcional: Espacio entre las celdas del grid */
+        font-size: 0.9rem;
+        padding-bottom: 4rem;
     }
 }
