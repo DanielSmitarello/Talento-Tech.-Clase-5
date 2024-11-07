@@ -450,6 +450,7 @@ h1 {
     width: 80%;
     font-size: 1rem;
     padding: 2rem 0rem;
+    text-align: justify;
 }
 
 /*______________________ Footer ______________________*/
@@ -624,6 +625,14 @@ h1 {
 
     .carros{
         width: 100%; /* Cada card ocupa todo el ancho disponible en pantallas pequeñas */
+    }
+
+    .carros>img {
+        width: 90%; /* Asegura que la imagen ocupe todo el ancho del card */
+        height: 13rem; /* Mantiene la proporción de la imagen */
+        border-radius: 4px; /* Añade bordes redondeados a la imagen */
+        padding: 0.4rem 0rem;
+        transition: transform 0.5s ease; /* Añade una transición suave */
     }
 
     .contenedor-video {
