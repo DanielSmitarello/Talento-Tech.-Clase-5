@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 /*______________________ * ______________________*/
 
 /* Establecer un margen y padding de cero para todos los elementos */
@@ -54,6 +56,9 @@ body {
 }
 
 .header-titulo>h1 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    font-optical-sizing: auto;
     width: 75%;
     text-align: center;
     /* background-color: antiquewhite; */
@@ -91,6 +96,8 @@ h1 {
 }
 
 .parrafo>h2{
+    font-family: "Rubik", sans-serif;
+    font-weight: 200;
     text-align: center;
     font-size: 2.3rem;
     padding: 2rem;
@@ -134,6 +141,8 @@ h1 {
 }
 
 .grid>h3{
+    font-family: "Rubik", sans-serif;
+    font-weight: 100;
     text-align: center;
     width: 100%;
     /* background-color: #3333336e; */
