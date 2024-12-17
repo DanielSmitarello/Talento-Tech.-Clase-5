@@ -462,6 +462,78 @@ h1 {
     text-align: justify;
 }
 
+
+
+
+/*______________________ Carrito ______________________*/
+
+
+/* Estilo para el carrito de compras a la derecha */
+#carrito {
+    position: fixed; /* Mantener el carrito fijo en la pantalla */
+    top: 100px; /* Ajusta el espacio para que no tape el navbar */
+    right: 20px; /* Posicionar el carrito a la derecha */
+    width: 300px; /* Ajusta el tamaño según lo necesites */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto flotante */
+    z-index: 1050; /* Asegurarte de que el carrito esté por encima del contenido */
+}
+
+#carrito h2 {
+    margin-bottom: 10px;
+}
+
+
+/* Ajuste para el contenedor de productos */
+#productos {
+    margin-right: 320px; /* Deja espacio a la derecha para el carrito */
+}
+
+/* Ajuste para las tarjetas (si las usas con Bootstrap) */
+.card {
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+    margin-right: 10px;  /* Espacio a la derecha para no chocar con el carrito */
+}
+
+/* Estilo del título del carrito */
+#carrito h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Estilo de los botones en el carrito */
+#carrito button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Estilo para la lista de productos del carrito */
+#lista-carrito {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo de cada item del carrito */
+#lista-carrito li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+/* Estilo del total del carrito */
+#total-carrito {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+
 /*______________________ Footer ______________________*/
 
 
