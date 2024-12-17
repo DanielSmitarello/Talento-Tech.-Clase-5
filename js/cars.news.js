@@ -1,6 +1,21 @@
 const apiKey = '68ca96131fdc4402941afcd94a0bf899'; // Reemplaza con tu clave de NewsAPI
 const newsContainer = document.getElementById('news-container');
 
+const proxyUrl = 'https://cors-anywhere.herokuapp.com/'; // URL del proxy
+const apiUrl = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=68ca96131fdc4402941afcd94a0bf899'; // La URL de la API de noticias
+
+// Realizamos la solicitud a través del proxy
+fetch(proxyUrl + apiUrl)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data); // Aquí procesas la respuesta de la API
+        // Lógica para mostrar las noticias en tu página
+    })
+    .catch(error => {
+        console.error('Error al obtener noticias:', error);
+    });
+
+
 // Función para obtener noticias
 async function fetchNews() {
     try {
