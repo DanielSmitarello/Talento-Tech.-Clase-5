@@ -150,14 +150,14 @@ function cargarProductos() {
         // Crear una card para cada producto
         var card = document.createElement('div');
         card.classList.add('col-12', 'col-sm-6', 'col-md-4', 'mb-4');
-
+    
         card.innerHTML = `
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">${producto.nombre}</h5>
                     <p class="card-text">Precio: $${producto.precio}</p>
                     <p class="card-text">Stock: ${producto.stock}</p>
-                    
+    
                     <!-- Botón para agregar al carrito -->
                     <button class="agregar-carrito btn btn-primary" 
                             data-id="${producto.id}" 
@@ -165,13 +165,13 @@ function cargarProductos() {
                             data-precio="${producto.precio}">
                         Agregar al Carrito
                     </button>
-
+    
                     <!-- Botón para ver la descripción -->
                     <button class="ver-descripcion btn btn-info btn-sm mt-2" 
                             data-id="${producto.id}">
                         Ver Descripción
                     </button>
-
+    
                     <!-- Descripción del producto -->
                     <div class="descripcion mt-2" id="descripcion-${producto.id}" style="display: none;">
                         <p>${producto.descripcion}</p>
@@ -179,14 +179,16 @@ function cargarProductos() {
                 </div>
             </div>
         `;
-
+    
         // Agregar la card al contenedor
         listaProductos.appendChild(card);
-
-        // Asignar eventos a los botones
+    
+        // Asignar eventos a los botones de descripción
         var botonDescripcion = card.querySelector('.ver-descripcion');
+        console.log('Botón encontrado:', botonDescripcion); // Verificar si existe el botón
         botonDescripcion.addEventListener('click', mostrarDescripcion);
     });
+    
 
     // Asignar eventos a los botones de agregar al carrito
     var botonesAgregar = document.getElementsByClassName('agregar-carrito');
@@ -219,17 +221,21 @@ function mostrarDescripcion(event) {
     var productoId = event.target.getAttribute('data-id');
     var descripcion = document.getElementById('descripcion-' + productoId);
 
-    if (descripcion.style.display === 'none') {
-        descripcion.style.display = 'block';
-        descripcion.style.transition = 'opacity 0.5s ease';
-        descripcion.style.opacity = 1;
+    if (descripcion.style.display === 'none' || descripcion.style.display === '') {
+        descripcion.style.display = 'block'; // Muestra la descripción
+        descripcion.style.opacity = 1; // Asegúrate de que la opacidad sea visible
+        descripcion.style.transition = 'opacity 0.5s ease'; // Transición suave
     } else {
         descripcion.style.opacity = 0;
         setTimeout(() => {
-            descripcion.style.display = 'none';
-        }, 500);
+            descripcion.style.display = 'none'; // Oculta la descripción
+        }, 500); // Espera a que la transición termine antes de ocultar
     }
 }
+
+
+
+
 
 // Llamar a la función para mostrar los productos
 mostrarProductosEnConsola();

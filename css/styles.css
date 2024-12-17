@@ -497,6 +497,37 @@ h1 {
     margin-right: 10px;  /* Espacio a la derecha para no chocar con el carrito */
 }
 
+/* Centrar los botones dentro de la card */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Alinea los elementos verticalmente */
+}
+
+/* Espacio entre los botones */
+.card-body button {
+    margin-bottom: 10px;
+}
+
+/* Estilo adicional para el texto de la descripción, si lo necesitas */
+.descripcion {
+    text-align: center; /* Centrar el texto dentro de la descripción */
+}
+
+
+.descripcion {
+    display: none; /* Asegura que la descripción esté oculta inicialmente */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.mostrar-descripcion {
+    display: block;
+    opacity: 1;
+}
+
+
 /* Estilo del título del carrito */
 #carrito h2 {
     font-size: 1.5rem;
